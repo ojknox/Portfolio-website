@@ -16,25 +16,29 @@
 <body>
     <section>
         <h1>Olivia Knox</h1>
-        <section class="aboutinfo">
-            <div class="abouttext">
-                <h2>About</h2>
-                <p>British front-end developer currently living in Bangkok. Looking for a front-end developer role.</p>
-                <p>I'm a self taught front-end developer. I've completed the following courses on <a href="https://www.codecademy.com/" target="_blank">Codecademy.com</a>: </p>
-                <ul>
-                    <li>Build a website with HTML, CSS and Github Pages</li>
-                    <li>Learn Javascript</li>
-                    <li>Create a front-end app with React</li>
-                </ul>
-                <p>I'm currently working through the front-end engineer career path on <a href="https://www.codecademy.com/" target="_blank">Codecademy.com</a>. I've supplemented my learning with Google & other website such as <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> & <a href="https://www.frontendmentor.io/challenges" target="_blank">frontendmentor</a>.</p>
-            </div>
-            <div class="aboutimg">
-                <img src="./images/profile photo edit.jpg">
-            </div>
+        <p>Please click on one of the links below to find out more!</p>
+        <section>
+            <h2 id="aboutToggle">About</h2>
+            <div class="aboutinfo" id="aboutinfo">
+                <div class="abouttext">
+                    <p>British front-end developer currently living in Bangkok. Looking for a front-end developer role.</p>
+                    <p>I'm a self taught front-end developer. I've completed the following courses on <a href="https://www.codecademy.com/" target="_blank">Codecademy.com</a>: </p>
+                    <ul>
+                        <li>Build a website with HTML, CSS and Github Pages</li>
+                        <li>Learn Javascript</li>
+                        <li>Create a front-end app with React</li>
+                    </ul>
+                    <p>I'm currently working through the front-end engineer career path on <a href="https://www.codecademy.com/" target="_blank">Codecademy.com</a>. I've supplemented my learning with Google & other website such as <a href="https://www.freecodecamp.org/" target="_blank">freecodecamp</a> & <a href="https://www.frontendmentor.io/challenges" target="_blank">frontendmentor</a>.</p>
+                </div>
+                <div class="aboutimg">
+                    <img src="./images/profile photo edit.jpg">
+                </div>
+            </div>        
         </section>
+
         <section class="skills">
-            <h2>Skills</h2>
-            <div class="languages">
+            <h2 id="skillToggle">Skills</h2>
+            <div class="languages" id="languages">
                 <i class="fab fa-html5"></i>
                 <i class="fab fa-css3-alt"></i>
                 <i class="fab fa-js-square"></i>
@@ -43,11 +47,13 @@
                 <i class="fab fa-github"></i>
             </div>
         </section>
-        <section class="contact">
-            <h2>Contact</h2>
-            <p>Please feel free to reach out to me if you have any questions!</p>
-            <a><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/ojknox" target="_blank"><i class="fab fa-github"></i></a>
+        <section>
+            <h2 id="contactToggle">Contact</h2>
+            <div class='contact' id="contact">
+                <p>Please feel free to reach out to me if you have any questions!</p>
+                <a><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/ojknox" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
         </section>
         
         <section class="projects">
@@ -139,6 +145,7 @@
             </div>
         </section>
     </section>
+    <script src="index.js"></script>
 </body>
 </html>
 

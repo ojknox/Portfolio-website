@@ -26,6 +26,12 @@ h1 {
 
 h2 {
     font-size: var(--h2-font-size);
+    transition: color 0.8s;
+}
+
+h2:hover {
+    cursor: pointer;
+    color:#9866d2;
 }
 
 p, li {
@@ -44,7 +50,7 @@ a:hover {
 
 .aboutinfo {
     margin: 0 auto;
-    display: flex;
+    display: none;
     align-items: center;
 }
 
@@ -62,9 +68,17 @@ img {
     border-radius: 10px;
 }
 
+.languages {
+    display: none;
+}
+
 i {
     font-size: var(--heading-font-size);
     margin-right: 10px;
+}
+
+.contact {
+    display: none;
 }
 
 .grid {
