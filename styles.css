@@ -52,6 +52,11 @@ a:hover {
     margin: 0 auto;
     display: none;
     align-items: center;
+    transition: 0.3s;
+}
+
+.aboutinfo.active {
+    display: flex;
 }
 
 .abouttext {
@@ -72,6 +77,10 @@ img {
     display: none;
 }
 
+.languages.active {
+    display: block;
+}
+
 i {
     font-size: var(--heading-font-size);
     margin-right: 10px;
@@ -79,6 +88,10 @@ i {
 
 .contact {
     display: none;
+}
+
+.contact.active {
+    display: block;
 }
 
 .grid {
@@ -146,4 +159,26 @@ i {
     top:0;
     left: 0;
     z-index: 1;
+}
+
+@media only screen and (max-width: 768px) {
+    .aboutinfo.active {
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+    }
+
+    .grid {
+        grid-template-columns: 70%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 480px){
+    .grid {
+        grid-template-columns: 90%;
+    }
+
+    .description_text {
+        font-size: 14px;
+    }
 }

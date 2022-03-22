@@ -1,32 +1,20 @@
 //DOM elements
-const about = document.getElementById('aboutToggle');
-const skills = document.getElementById('skillToggle');
-const contact = document.getElementById('contactToggle');
+const about = document.querySelector('.aboutToggle');
+const aboutInfo = document.querySelector(".aboutinfo");
+const skills = document.querySelector('.skillToggle');
+const skillsInfo = document.querySelector(".languages")
+const contact = document.querySelector('.contactToggle');
+const contactInfo = document.querySelector(".contact")
 
-//onClick event handlers
+
 about.onclick = () => {
-    let info = document.getElementById('aboutinfo');
-    if(info.style.display === 'none'){
-        info.style.display = 'flex';
-    } else {
-        info.style.display = 'none';
-    }
+    aboutInfo.classList.toggle("active");
 }
 
 skills.onclick = () => {
-    let skillInfo = document.getElementById('languages');
-    if(skillInfo.style.display === 'none'){
-        skillInfo.style.display = 'block';
-    } else {
-        skillInfo.style.display = 'none';
-    }
+    skillsInfo.classList.toggle("active");
 }
 
 contact.onclick = () => {
-    let contactInfo = document.getElementById('contact');
-    if(contactInfo.style.display === 'none'){
-        contactInfo.style.display = 'block';
-    } else {
-        contactInfo.style.display = 'none';
-    }
+    contactInfo.classList.toggle("active");
 }
