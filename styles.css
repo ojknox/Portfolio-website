@@ -171,7 +171,9 @@ i {
         grid-template-columns: 70%;
         justify-content: center;
     }
-   
+}
+
+@media only screen and (max-width: 600px{
     .description_text {
         font-size: 14px;
     }
