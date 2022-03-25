@@ -171,14 +171,14 @@ i {
         grid-template-columns: 70%;
         justify-content: center;
     }
+   
+    .description_text {
+        font-size: 14px;
+    }
 }
 
 @media only screen and (max-width: 480px){
     .grid {
         grid-template-columns: 90%;
-    }
-
-    .description_text {
-        font-size: 14px;
     }
 }
